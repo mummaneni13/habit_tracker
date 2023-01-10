@@ -51,9 +51,6 @@ print(response.text)
 
 update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{date.strftime('%Y%m%d')}"
 
-new_pixel_data = {
-    "quantity": "4.5"
-}
 
 ## PUT
 # response = requests.put(url=update_endpoint, json=new_pixel_data, headers=headers)
