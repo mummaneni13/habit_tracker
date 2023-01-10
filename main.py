@@ -49,7 +49,7 @@ pixel_data = {
 response = requests.post(url=pixel_creation_endpoint, json=pixel_data, headers=headers)
 print(response.text)
 
-update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today.strftime('%Y%m%d')}"
+update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{date.strftime('%Y%m%d')}"
 
 new_pixel_data = {
     "quantity": "4.5"
